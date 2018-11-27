@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tricia's Practice Run</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel/">
+      class Practice extends React.Component {
+        render() {
+          return (
+            <div>
+              <h2>Tricia's Bucket List</h2>
+              <ul>
+                <li>Swim with manatees</li>
+                <li>Visit every continent</li>
+              </ul>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <Practice />, document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>
